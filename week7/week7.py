@@ -137,51 +137,51 @@
 
 
 #exercise 7
-# import turtle
-#
-# def drawBar(t, height, gap):
-#     t.penup()
-#     t.left(90)
-#     t.forward(height+gap)
-#     t.write("  "+ str(height))
-#     t.back(height+gap)
-#     t.rigt(90)
-#     t.pendown()
-#
-#
-#     t.begin_fill()
-#     t.left(90)
-#     t.forward(height)
-#     t.right(90)
-#     t.forward(40)
-#     t.right(90)
-#     t.forward(height)
-#     t.left(90)
-#     t.end_fill()
+ import turtle
+
+ def drawBar(t, height, gap):
+    t.penup()
+     t.left(90)
+     t.forward(height+gap)
+    t.write("  "+ str(height))
+     t.back(height+gap)
+     t.rigt(90)
+     t.pendown()
 #
 #
-# def barChart(data):
-#     maxheight = max(data)
-#     numbars = len(data)
-#
-#     border = 10
-#
-#     gap = (maxheight+border)/25
-#
-#     wn = turtle.Screen()
-#     wn.bgcolor("lightgreen")
-#     right = 40 * numbars + border
-#     top = maxheight + 4 * border
-#     wn.setworldcoordinates(-border, -border, right, top)
-#
-#     t = turtle.Turtle()
-#     t.color("blue")
-#     t.fillcolor("red")
-#     t.pensize(3)
+     t.begin_fill()
+     t.left(90)
+     t.forward(height)
+     t.right(90)
+     t.forward(40)
+     t.right(90)
+     t.forward(height)
+    t.left(90)
+     t.end_fill()
 #
 #
-#     for height in data:
-#         drawBar(t, height, gap)
+ def barChart(data):
+     maxheight = max(data)
+     numbars = len(data)
+
+     border = 10
+
+     gap = (maxheight+border)/25
+#
+     wn = turtle.Screen()
+     wn.bgcolor("lightgreen")
+     right = 40 * numbars + border
+     top = maxheight + 4 * border
+     wn.setworldcoordinates(-border, -border, right, top)
+#
+     t = turtle.Turtle()
+     t.color("blue")
+     t.fillcolor("red")
+     t.pensize(3)
+#
+#
+     for height in data:
+         drawBar(t, height, gap)
 #
 #     wn.exitonclick()
 #
